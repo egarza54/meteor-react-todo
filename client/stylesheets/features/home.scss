@@ -1,0 +1,89 @@
+.home-wrapper {
+	.user-auth-container {
+
+	}
+
+	h1 {
+		font-size: 100px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 100;
+		color: #9C9583;
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+	}
+
+	.lists {
+		width: 600px;
+    margin: auto;
+    margin-top: 30px;
+    background: white;
+	  box-shadow: 4px 4px 16px -6px #888;
+
+		.task-input {
+
+			.description_field {
+	  		display: inline-block;
+		    margin: 0;
+		    padding: 15px 0px;
+		    padding-left: 10px;
+		    width: 98%;
+		    font-family: 'Open Sans', sans-serif;
+		    font-size: 1.5em;
+		    font-style: italic;
+		    font-weight: 100;
+		    border: none;
+			}
+		}
+
+		.tasks-wrapper {
+			.task-item {
+				display: block;
+				border-top: thin solid #dddddd;
+		    padding: 10px 0px;
+
+				input {
+					display: inline-block;
+			    margin-left: 15px;
+			    position: relative;
+			    bottom: 4px;
+				}
+
+				p {
+			    width: 476px;
+					font-family: 'Open Sans', sans-serif;
+					font-size: 2em;
+			    font-weight: 100;
+					margin: 0;
+					margin-left: 15px;
+					display: inline-block;
+				}
+
+				.delete {
+					display: inline-block;
+			    margin-left: 25px;
+					position: relative;
+			    bottom: 5px;
+			    background-color: #8C271E;
+			    color: white;
+			    border-radius: 24px;
+			    width: 15px;
+			    height: 16px;
+			    cursor: pointer;
+			    text-align: center;
+			    font-size: 12px;
+			    font-weight: 800;
+				}
+			}
+
+			.checked {
+				text-decoration: line-through;
+				color: #888;
+			}
+		}
+	}
+
+	#login-buttons {
+
+	}
+}
