@@ -1,7 +1,7 @@
 // Task component - represents a single todo item
 Task = React.createClass({
   toggleChecked() {
-    // Set the checked property to the opposite of its current value
+    // Set 'checked' to opposite value
     Meteor.call("setChecked", this.props.task._id, ! this.props.task.checked);
   },
 
@@ -11,9 +11,8 @@ Task = React.createClass({
   },
 
   render() {
-    // Give tasks a different className when they are checked off,
-    // so that we can style them nicely in CSS
-    // Add "checked" and/or "private" to the className when needed
+    // If a task is 'checked' it will provided a new className
+    // See home.scss for details 
 
     const taskClassName = (this.props.task.checked ? "checked" : "") + " " +
       (this.props.task.private ? "private" : "");
